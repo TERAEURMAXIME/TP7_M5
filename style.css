@@ -1,0 +1,172 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+	background-color: #e9e9e9;
+	color: #111;
+}
+
+.page {
+	padding: 14px 16px;
+}
+
+.registration-form {
+	width: min(900px, 95vw);
+	margin: 0 auto;
+}
+
+.result-card {
+	width: min(900px, 95vw);
+	margin: 0 auto;
+	background-color: #f2f2f2;
+	border: 1px solid #d9d9d9;
+	border-radius: 10px;
+	padding: 12px;
+	font-size: 26px;
+}
+
+.result-card p {
+	margin: 18px 0;
+}
+
+.result-card a {
+	color: #5a2ea6;
+}
+
+h1 {
+	margin: 0 0 8px;
+	padding: 3px 12px;
+	text-align: center;
+	font-size: 30px;
+	color: #fff;
+	background-color: #56b347;
+	border-radius: 3px;
+}
+
+.hero-image {
+	display: block;
+	width: 66%;
+	max-width: 640px;
+	margin: 8px auto 8px;
+	border-radius: 10px;
+}
+
+.form-row {
+	display: grid;
+	grid-template-columns: 160px 1fr;
+	align-items: center;
+	gap: 10px;
+	margin: 10px 0;
+}
+
+.form-row label {
+	font-size: 26px;
+}
+
+input[type="text"],
+select {
+	width: 100%;
+	height: 44px;
+	border: 1px solid #c8c8c8;
+	border-radius: 7px;
+	padding: 0 14px;
+	font-size: 26px;
+	background-color: #efefef;
+}
+
+.submit input[type="submit"] {
+	border-radius: 7px;
+	font-size: 24px;
+	background-color: #0e2beb;
+}
+
+.submit {
+	display: flex;
+	justify-content: center;
+	margin-top: 14px;
+}
+
+input[type="text"]:focus,
+select:focus {
+	outline: 2px solid #6bbf5b;
+	outline-offset: 1px;
+}
+
+.birthdate-row {
+	align-items: flex-start;
+}
+
+.birthdate-selects {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 8px;
+	width: 100%;
+}
+
+.health-questionnaire {
+	margin-top: 8px;
+	border: 2px solid #cfcfcf;
+	border-radius: 12px;
+	padding: 10px 12px 12px;
+}
+
+.health-questionnaire legend {
+	font-size: 26px;
+	padding: 0 8px;
+}
+
+.question {
+	margin: 8px 0;
+}
+
+.question p {
+	margin: 0 0 6px;
+	font-size: 26px;
+	line-height: 1.3;
+}
+
+.question label {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	margin-right: 18px;
+	font-size: 26px;
+}
+
+input[type="radio"] {
+	width: 22px;
+	height: 22px;
+}
+
+@media (max-width: 900px) {
+	h1 {
+		font-size: 22px;
+	}
+
+	.form-row {
+		grid-template-columns: 110px 1fr;
+	}
+
+	.form-row label,
+	input[type="text"],
+	select,
+	.health-questionnaire legend,
+	.question p,
+	.question label,
+	.result-card {
+		font-size: 18px;
+	}
+
+	input[type="text"],
+	select {
+		height: 38px;
+	}
+
+	input[type="radio"] {
+		width: 16px;
+		height: 16px;
+	}
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Résultat de l'inscription</title>
+	<link rel="icon" type="image/png" href="images/favicon.png">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<main class="page">
+		<section class="result-card" aria-live="polite">
+			<h1>Résultat de l'inscription</h1>
+
+			<p>Merci, <strong>{{ prenom }} {{ nom }}</strong>.</p>
+			<p>Votre âge : <strong>{{ age }} ans</strong></p>
+			<p>Montant estimé des mensualités : <strong>{{ monthly_fee }} €</strong></p>
+
+			<p>
+				Cette estimation s'appuie sur le questionnaire précédent,
+				en attendant la vérification de votre dossier complet.
+			</p>
+
+			<p><a href="/">Retour au formulaire</a></p>
+		</section>
+	</main>
+</body>
+</html>
